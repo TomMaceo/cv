@@ -4,23 +4,41 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Tom Maceo — CV / Directeur Artistique</title>
-<meta name="description" content="CV de Tom Maceo, directeur artistique et spécialiste de l'identité de marque. Aix-en-Provence.">
+<meta name="description" content="CV de Tom Maceo, directeur artistique et specialiste de l'identite de marque. Aix-en-Provence.">
 <style>
   *{margin:0;padding:0;box-sizing:border-box}
-  body{background:#ffffff}
-  img{
+  body{background:#ffffff;font-family:Arial,Helvetica,sans-serif;padding-left:30px}
+  .cv{
     display:block;
     width:100%;
     max-width:800px;
     height:auto;
   }
+  .actions{max-width:800px;padding:18px 0 26px 0}
+  .btn{
+    display:inline-block;
+    background:#1B1B22;
+    color:#ffffff;
+    text-decoration:none;
+    font-weight:bold;
+    text-transform:uppercase;
+    letter-spacing:.04em;
+    font-size:14px;
+    padding:14px 26px;
+  }
+  .btn:hover{background:#000000}
 </style>
 </head>
 <body>
-  <!-- Lien GitHub (raw) comme demande.
-       Meme depot que l'image -> vous pouvez remplacer par : src="curriculum-vitae.jpg" -->
-  <img
-    src="https://raw.githubusercontent.com/TomMaceo/cv/main/curriculum-vitae.jpg"
-    alt="CV - Tom Maceo, directeur artistique, specialiste identite de marque, Aix-en-Provence">
+  <!-- Fichiers hebergees sur GitHub, references en chemin relatif (meme depot).
+       Si besoin en URL absolue :
+       image -> https://raw.githubusercontent.com/TomMaceo/cv/main/curriculum-vitae.jpg
+       pdf   -> https://raw.githubusercontent.com/TomMaceo/cv/main/curriculum-vitae.pdf -->
+  <img class="cv" src="curriculum-vitae.jpg"
+       alt="CV - Tom Maceo, directeur artistique, specialiste identite de marque, Aix-en-Provence">
+
+  <div class="actions">
+    <a class="btn" href="curriculum-vitae.pdf" target="_blank" rel="noopener">Version PDF &nbsp;&darr;</a>
+  </div>
 </body>
 </html>
